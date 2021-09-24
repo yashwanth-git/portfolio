@@ -51,7 +51,7 @@ header {
   -ms-transform: translatez(0);
   -o-transform: translatez(0);
   -webkit-transform: translateZ(0);
-  -webkit-font-smoothing: antialiased; 
+  -webkit-font-smoothing: antialiased;
   -webkit-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
@@ -84,8 +84,6 @@ header {
 }
 .Navbar__Link:hover {
   color: var(--fontColorLight);
-}
-header {
 }
 .top {
   top: 0;
@@ -431,6 +429,15 @@ footer {
   }
 }
 @media (max-width: 475px) {
+  header,
+  .top,
+  .hide {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: var(--bgColor);
+  }
   .Toggler {
     display: block;
   }
