@@ -13,7 +13,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "src"),
     publicPath: "",
-    filename: "../dist/main.min.js",
+    filename: "../dist/main.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
