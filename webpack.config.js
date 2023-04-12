@@ -15,25 +15,8 @@ module.exports = {
     publicPath: "",
     filename: "main.js",
   },
-  module: {
-    rules: [
-      {
-        test: /\.(gif|png|jpe?g)$/,
-        loader: "file-loader",
-        options: {
-          name: "[name].[ext]",
-          outputPath: './dist/assets/images/'
-        },
-      },
-      {
-        test: /src\.html$/,
-        use: ["html-loader"],
-      },
-    ],
-  },
   plugins: [
     new HtmlWebpackPlugin({
-      inject: "body",
       template: "src/index.html",
       filename: "../dist/index.html",
       minify: {
@@ -43,13 +26,6 @@ module.exports = {
       },
     }),
   ],
-  devServer: {
-    static: {
-        directory: path.join(__dirname, 'assets'),
-      },
-      compress: true,
-      port: 9000,
-  },
 
   // Default mode for Webpack is production.
   // Depending on mode Webpack will apply different things

@@ -13,3 +13,6 @@ Personal portfolio to showcase my work.
 
 ### Performance Improvement
   Improved the performance of the site by serving next gen images, minifying assets, identifying lcp [main hero image], removing render blocking resources [by loading font css async]
+
+### Webpack
+  Automated the minification process for HTML, CSS, and JS using webpack. 
