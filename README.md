@@ -5,7 +5,7 @@ Personal portfolio to showcase my work.
 ## Todos
 
 - [x] Improve Site Performance [100/100]
-- [ ] Setup webpack [For automatic css, js minification]
+- [x] Setup webpack [For automatic css, js minification]
 - [ ] Move to Next.js
 - [ ] Incorporate blog [Start writing]
 
